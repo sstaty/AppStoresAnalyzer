@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="App_Stores_Analyzer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App_Stores_Analyzer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="grid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-1244,-341">
+        <Button x:Name="AnalyzeGooglePlayButton" Content="Analyze Google Play [ Android ]" HorizontalAlignment="Left" Margin="55,333,0,0" VerticalAlignment="Top" Width="302" Click="AnalyzeGooglePlay" IsEnabled="False"/>
+        <Button x:Name="AnalyzeAppStoreButton" Content="Analyze App Store [ iOS ]" HorizontalAlignment="Left" Margin="55,493,0,0" VerticalAlignment="Top" Width="302" Click="AnalyzeAppStore" IsEnabled="False"/>
+        <Button x:Name="AnalyzeWindowsStoreButton" Content="Analyze Windows Store [ Windows Phone ]" HorizontalAlignment="Left" Margin="55,643,0,0" VerticalAlignment="Top" Width="302" IsEnabled="False"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="604,301,0,0" TextWrapping="Wrap" Text="DOWNLOADED" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="768,301,0,0" TextWrapping="Wrap" Text="ANALYZED" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="900,301,0,0" TextWrapping="Wrap" Text="ERRORS" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="GooglePlayDownloadedTextBlock" HorizontalAlignment="Left" Margin="604,333,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="604,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="GooglePlayErrorsTextBlock" HorizontalAlignment="Left" Margin="900,339,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="AppStoreDownloadedTextBlock" HorizontalAlignment="Left" Margin="604,493,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="AppStoreAnalyzedTextBlock" HorizontalAlignment="Left" Margin="768,497,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="AppStoreErrorsTextBlock" HorizontalAlignment="Left" Margin="900,493,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock9" HorizontalAlignment="Left" Margin="429,649,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="604,649,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock11" HorizontalAlignment="Left" Margin="768,649,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="GooglePlayAnalyzedTextBlock" HorizontalAlignment="Left" Margin="768,339,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <Button x:Name="StartPauseGooglePlayButton" Content="START / PAUSE" HorizontalAlignment="Left" Margin="1039,317,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.538,0.188" IsEnabled="False"/>
+        <Button x:Name="StartPauseAppStoreButton" Content="START / PAUSE" HorizontalAlignment="Left" Margin="1039,493,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.125,-0.115" IsEnabled="False"/>
+        <Button x:Name="StartPauseWindowsStoreButton" Content="START / PAUSE" HorizontalAlignment="Left" Margin="1039,643,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,2.323" IsEnabled="False"/>
+        <TextBlock x:Name="GooglePlayTimeTextBlock" HorizontalAlignment="Left" Margin="1345,323,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="0.903,0.4"/>
+        <TextBlock x:Name="AppStoreTimeTextBlock" HorizontalAlignment="Left" Margin="1345,499,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="-0.758,0.6" Width="160" Height="26"/>
+        <TextBlock x:Name="WindowsStoreTimeTextBlock" HorizontalAlignment="Left" Margin="1345,649,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="1.468,0.5"/>
+        <Button x:Name="SetOutputButton" Content="Working Directory" HorizontalAlignment="Left" Margin="55,225,0,0" VerticalAlignment="Top" Width="302" Click="SetWorkingFolderButton_Click"/>
+        <TextBlock x:Name="OutputTextBlock" HorizontalAlignment="Left" Margin="429,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="869"/>
+        <TextBlock x:Name="AppStoreProgressTextBlock" HorizontalAlignment="Left" Margin="1345,462,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="-0.758,0.6"/>
+        <TextBlock x:Name="AppStoreCopyCountTextBlock" HorizontalAlignment="Left" Margin="1221,501,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="-0.758,0.6"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="429,301,0,0" TextWrapping="Wrap" Text="SEARCH WORDS" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <TextBlock x:Name="GooglePlaySearchWordsTextBlock" HorizontalAlignment="Left" Margin="429,333,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="AppStoreSearchWordsTextBlock" HorizontalAlignment="Left" Margin="429,493,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TestTextBlock" HorizontalAlignment="Left" Height="207" Margin="111,764,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="1045"/>
+        <TextBlock x:Name="COPIES" HorizontalAlignment="Left" Margin="1221,446,0,0" TextWrapping="Wrap" Text="COPIES" VerticalAlignment="Top" FontWeight="Bold"/>
+
+    </Grid>
+</Page>
